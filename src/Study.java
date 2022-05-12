@@ -38,6 +38,11 @@ public class Study {
         return result;
     }
 
+    /**
+     * @param roles roles
+     * @param textLines array of lines
+     * @return Grouped list of role lines
+     */
     private static String printTextPerRole(String[] roles, String[] textLines) {
         // Build a resulting structure array
         int[][] resultStructure = new int[roles.length][0];
