@@ -1,4 +1,4 @@
-package CommentsFilter;
+package commentsfilter;
 
 public class SpamAnalyzer extends KeywordAnalyzer {
     private String[] keywords;

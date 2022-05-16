@@ -1,4 +1,4 @@
-package CommentsFilter;
+package commentsfilter;
 
 public class Main {
     public Label checkLabels(TextAnalyzer[] analyzers, String text) {

@@ -1,4 +1,4 @@
-package CommentsFilter;
+package commentsfilter;
 
 public abstract class KeywordAnalyzer implements TextAnalyzer {
     protected abstract String[] getKeywords();

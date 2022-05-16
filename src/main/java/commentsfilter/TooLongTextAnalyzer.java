@@ -1,4 +1,4 @@
-package CommentsFilter;
+package commentsfilter;
 
 public class TooLongTextAnalyzer implements TextAnalyzer {
     private int maxLength;

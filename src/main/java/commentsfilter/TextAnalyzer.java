@@ -1,4 +1,4 @@
-package CommentsFilter;
+package commentsfilter;
 
 public interface TextAnalyzer {
     Label processText(String text);

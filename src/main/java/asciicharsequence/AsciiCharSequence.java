@@ -1,4 +1,4 @@
-package AsciiCharSequence;
+package asciicharsequence;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package CommentsFilter;
+package commentsfilter;
 
 public class NegativeTextAnalyzer extends KeywordAnalyzer {
     private String[] keywords = new String[]{":(", "=(", ":|"};

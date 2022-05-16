@@ -79,6 +79,27 @@ public class Study {
         return result.toString();
     }
 
+    public static double sqrt(double x) {
+        if (x < 0) throw new IllegalArgumentException("Expected non-negative number, got " + x);
+
+        return Math.sqrt(x);
+    }
+
+    public static int testCatch() {
+        try {
+            System.out.println("Try Called!");
+            int a = 2;
+            int b = 2;
+            return a + b;
+        } catch (Exception e) {
+            // ...
+        } finally {
+            System.out.println("Finally Called!");
+        }
+
+        return 42;
+    }
+
     public static void main(String[] args) {
         System.out.println(Arrays.toString(mergeArrays(new int[]{0, 2, 2}, new int[]{1, 3})));
 
@@ -95,5 +116,7 @@ public class Study {
                 "Артемий Филиппович: Вот не было заботы, так подай!",
                 "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
         System.out.println(printTextPerRole(roles, textLines));
+
+        System.out.println(testCatch());
     }
 }

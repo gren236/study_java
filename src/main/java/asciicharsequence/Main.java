@@ -1,4 +1,4 @@
-package AsciiCharSequence;
+package asciicharsequence;
 
 public class Main {
     public static void main(String[] args) {
