@@ -1,3 +1,8 @@
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.function.DoubleUnaryOperator;
 
@@ -100,7 +105,7 @@ public class Study {
         return 42;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println(Arrays.toString(mergeArrays(new int[]{0, 2, 2}, new int[]{1, 3})));
 
         String[] roles = {
@@ -118,5 +123,16 @@ public class Study {
         System.out.println(printTextPerRole(roles, textLines));
 
         System.out.println(testCatch());
+
+        OutputStream outputStream = new OutputStream() {
+            @Override
+            public void write(int b) throws IOException {
+                System.out.write(b);
+                System.out.flush();
+            }
+        };
+        Writer writer = new OutputStreamWriter(outputStream, StandardCharsets.US_ASCII);
+        writer.write("S");
+        writer.flush();
     }
 }
